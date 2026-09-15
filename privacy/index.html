@@ -31,6 +31,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>기기를 구분하는 값: 게임이 기기에서 무작위로 만든 값이며, 전화번호·기기 고유번호·광고 식별자가 아닙니다.</li>
 <li>플레이 기록: 점수, 클리어 보너스, 버틴 시간, 처치 수(적 종류별 내역 포함), 도달 레벨, 클리어 여부, 난이도·스테이지·밤낮, 직업과 자세, 모은 엽전·마제은, 누적 클리어 수</li>
 <li>접속 국가: 접속 정보로 추정한 국가</li>
+<li>신고 기록: 순위표에서 다른 이용자의 아이디를 신고한 경우, 신고한 사람의 기기를 구분하는 값, 신고된 아이디, 신고한 순위표의 난이도, 신고 시각</li>
 </ul>
 <p>접속 IP 주소는 데이터베이스에 저장하지 않습니다. 다만 짧은 시간 안에 반복되는 로그인·삭제 시도를 막기 위해 서버 메모리에서 잠시 사용되며, 서버 제공 업체의 운영 기록에 일시적으로 남을 수 있습니다.</p>
 <h2>3. 이용 목적</h2>
@@ -39,11 +40,12 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>앞뒤가 맞지 않는 비정상 기록 걸러내기</li>
 <li>기기를 바꿨을 때 아이디와 비밀번호로 기록 되찾기</li>
 <li>부정한 반복 시도 차단</li>
+<li>부적절한 아이디 신고의 접수와 처리(운영자가 확인한 뒤 순위표에서 감춤)</li>
 </ul>
 <h2>4. 다른 이용자에게 공개되는 항목</h2>
-<p>순위표에서 다른 이용자에게 보이는 항목은 아이디, 점수, 클리어 보너스, 버틴 시간, 처치 수, 클리어 여부, 국가, 누적 클리어 수입니다. 기기를 구분하는 값과 비밀번호는 공개되지 않습니다.</p>
+<p>순위표에서 다른 이용자에게 보이는 항목은 아이디, 점수, 클리어 보너스, 버틴 시간, 처치 수, 클리어 여부, 국가, 누적 클리어 수입니다. 기기를 구분하는 값과 비밀번호, 신고한 사람과 신고 내용은 공개되지 않습니다.</p>
 <h2>5. 보유 기간과 파기</h2>
-<p>수집한 정보는 이용자가 기록을 지우거나 삭제를 요청할 때까지 보관하며, 요청을 받으면 지체 없이 파기합니다.</p>
+<p>수집한 정보는 이용자가 기록을 지우거나 삭제를 요청할 때까지 보관하며, 요청을 받으면 지체 없이 파기합니다. 신고 기록은 처리가 끝난 뒤 1년 안에 파기합니다.</p>
 <ul>
 <li>설정 → 온라인 랭킹 → [내 기록 지우기]: 서버에 올린 기록과 아이디를 삭제하고 로그아웃합니다.</li>
 <li>설정 → 온라인 랭킹 → [로그아웃]: 기기에 저장된 식별값·아이디·보내지 못한 기록을 기기에서 지웁니다. 서버에 올린 기록까지 지우려면 [내 기록 지우기]를 이용해 주세요.</li>
@@ -74,7 +76,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>게임과 서버 사이 통신 암호화(HTTPS)</li>
 <li>데이터베이스는 외부에서 직접 접근할 수 없고, 정해진 서버 기능만 접근</li>
 <li>기기를 구분하는 값을 다른 이용자에게 공개하지 않음</li>
-<li>로그인·삭제 시도 횟수 제한</li>
+<li>로그인·삭제·신고 시도 횟수 제한</li>
 </ul>
 <h2>13. 개인정보 보호책임자</h2>
 <ul>
@@ -90,6 +92,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <h2>15. 방침의 변경</h2>
 <p>이 방침을 바꾸는 경우 게임 안 도움말과 게시 페이지를 통해 알립니다.</p>
 <p>시행일: 2026년 9월 15일</p>
+<p>개정일: 2026년 9월 16일 (순위표 아이디 신고 기능 추가에 따라 수집 항목·이용 목적·보유 기간에 신고 기록을 반영)</p>
 </section>
 <hr>
 <section id="en" lang="en">
@@ -106,6 +109,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>Device identifier: a random value the Game creates on your device. It is not your phone number, hardware serial or advertising ID.</li>
 <li>Run records: score, clear bonus, survival time, kills (with a per-enemy breakdown), level reached, whether you cleared, difficulty, stage, time of day, class and stance, coins and silver earned, total clears</li>
 <li>Country: estimated from connection information</li>
+<li>Report records: if you report another player&#x27;s ID on the leaderboard, the reporting device identifier, the reported ID, the leaderboard difficulty and the time of the report</li>
 </ul>
 <p>Your IP address is not stored in our database. It is used briefly in server memory to block rapid repeated login or erase attempts, and may remain temporarily in our hosting provider&#x27;s operational logs.</p>
 <h2>3. Purposes</h2>
@@ -114,11 +118,12 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>Filtering out implausible records</li>
 <li>Letting you recover your records on a new device with your ID and password</li>
 <li>Blocking abusive repeated attempts</li>
+<li>Receiving and handling reports of inappropriate IDs (reviewed by us, then hidden from the leaderboard)</li>
 </ul>
 <h2>4. Information shown to other players</h2>
-<p>On the leaderboard, other players can see your ID, score, clear bonus, survival time, kills, whether you cleared, country and total clears. Your device identifier and password are never shown.</p>
+<p>On the leaderboard, other players can see your ID, score, clear bonus, survival time, kills, whether you cleared, country and total clears. Your device identifier and password, and who reported what, are never shown.</p>
 <h2>5. Retention and deletion</h2>
-<p>We keep this information until you erase your records or ask us to delete it, and delete it without delay on request.</p>
+<p>We keep this information until you erase your records or ask us to delete it, and delete it without delay on request. Report records are deleted within one year after they are handled.</p>
 <ul>
 <li>Settings → Online leaderboard → [Erase my records]: deletes your uploaded records and ID from the server and logs you out.</li>
 <li>Settings → Online leaderboard → [Log out]: removes the identifier, ID and unsent records from your device. To delete what is already on the server, use [Erase my records].</li>
@@ -149,7 +154,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>Encrypted communication between the Game and the server (HTTPS)</li>
 <li>No direct outside access to the database; only designated server functions can reach it</li>
 <li>Device identifiers never shown to other players</li>
-<li>Rate limits on login and erase attempts</li>
+<li>Rate limits on login, erase and report attempts</li>
 </ul>
 <h2>13. Privacy officer</h2>
 <ul>
@@ -165,6 +170,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <h2>15. Changes</h2>
 <p>If we change this policy, we will announce it in the Game&#x27;s Help screen and on the published page.</p>
 <p>Effective date: September 15, 2026</p>
+<p>Revised: September 16, 2026 (added leaderboard ID reports to the information collected, purposes and retention)</p>
 </section>
 </main>
 </body>
