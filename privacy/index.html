@@ -22,7 +22,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <p class="sub">노마드저니 · BLACK THREAD</p>
 <p>노마드저니(브랜드: BLACK THREAD, 이하 &quot;개발사&quot;)는 게임 &quot;Dead Dynasty&quot;(이하 &quot;게임&quot;)를 이용하는 분의 개인정보를 「개인정보 보호법」 등 관련 법령에 따라 처리하며, 다음과 같이 안내합니다.</p>
 <h2>1. 기본 원칙</h2>
-<p>게임 진행 상황과 설정은 이용자의 기기 안에만 저장되며 서버로 보내지 않습니다. 온라인 랭킹에 회원가입하거나 로그인하지 않으면 개발사는 어떠한 개인정보도 수집하지 않습니다. 다만 게임에 들어 있는 광고 기능(구글 애드몹)은 광고를 보여 주기 위해 8항의 정보를 자동으로 수집해 구글에 보냅니다.</p>
+<p>게임 진행 상황과 설정은 이용자의 기기 안에만 저장되며 서버로 보내지 않습니다. 온라인 랭킹에 회원가입하거나 로그인하지 않으면 개발사는 어떠한 개인정보도 수집하지 않습니다. 다만 게임에 들어 있는 광고 기능(구글 애드몹)은 광고를 보여 주기 위해 8항의 정보를 자동으로 수집해 구글에 보냅니다. 또한 결과 화면에서 [기록 공유]를 누른 경우에만 2항의 기록 카드 이미지를 서버에 올립니다.</p>
 <h2>2. 수집하는 항목</h2>
 <p>온라인 랭킹을 이용하는 경우에만 다음 항목을 수집합니다.</p>
 <ul>
@@ -33,7 +33,11 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>접속 국가: 접속 정보로 추정한 국가</li>
 <li>신고 기록: 순위표에서 다른 이용자의 아이디를 신고한 경우, 신고한 사람의 기기를 구분하는 값, 신고된 아이디, 신고한 순위표의 난이도, 신고 시각</li>
 </ul>
-<p>접속 IP 주소는 데이터베이스에 저장하지 않습니다. 다만 짧은 시간 안에 반복되는 로그인·삭제 시도를 막기 위해 서버 메모리에서 잠시 사용되며, 서버 제공 업체의 운영 기록에 일시적으로 남을 수 있습니다.</p>
+<p>결과 화면에서 [기록 공유]를 누른 경우에만 다음 항목을 서버에 올립니다(온라인 랭킹 가입 여부와 관계없음).</p>
+<ul>
+<li>기록 카드 이미지: 게임 결과(클리어/전사), 점수와 등급, 버틴 시간, 처치 수, 도달 레벨이 그려진 그림 한 장. 아이디·기기를 구분하는 값 등 이용자를 알아볼 수 있는 정보는 넣지 않습니다.</li>
+</ul>
+<p>접속 IP 주소는 데이터베이스에 저장하지 않습니다. 다만 짧은 시간 안에 반복되는 로그인·삭제·공유 시도를 막기 위해 서버 메모리에서 잠시 사용되며, 서버 제공 업체의 운영 기록에 일시적으로 남을 수 있습니다.</p>
 <h2>3. 이용 목적</h2>
 <ul>
 <li>온라인 순위표 제공(순위 계산과 표시)</li>
@@ -41,11 +45,12 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>기기를 바꿨을 때 아이디와 비밀번호로 기록 되찾기</li>
 <li>부정한 반복 시도 차단</li>
 <li>부적절한 아이디 신고의 접수와 처리(운영자가 확인한 뒤 순위표에서 감춤)</li>
+<li>기록 공유 링크의 미리보기 이미지 제공(카카오톡 등에서 링크를 보낼 때 기록 카드가 보이도록)</li>
 </ul>
 <h2>4. 다른 이용자에게 공개되는 항목</h2>
-<p>순위표에서 다른 이용자에게 보이는 항목은 아이디, 점수, 클리어 보너스, 버틴 시간, 처치 수, 클리어 여부, 국가, 누적 클리어 수입니다. 기기를 구분하는 값과 비밀번호, 신고한 사람과 신고 내용은 공개되지 않습니다.</p>
+<p>순위표에서 다른 이용자에게 보이는 항목은 아이디, 점수, 클리어 보너스, 버틴 시간, 처치 수, 클리어 여부, 국가, 누적 클리어 수입니다. 기기를 구분하는 값과 비밀번호, 신고한 사람과 신고 내용은 공개되지 않습니다. 기록 공유로 올린 기록 카드 이미지는 공유 링크를 받은 사람이면 누구나 볼 수 있습니다. 링크 주소는 추측할 수 없는 무작위 값이라, 링크를 모르는 사람은 찾아볼 수 없습니다.</p>
 <h2>5. 보유 기간과 파기</h2>
-<p>수집한 정보는 이용자가 기록을 지우거나 삭제를 요청할 때까지 보관하며, 요청을 받으면 지체 없이 파기합니다. 신고 기록은 처리가 끝난 뒤 1년 안에 파기합니다.</p>
+<p>수집한 정보는 이용자가 기록을 지우거나 삭제를 요청할 때까지 보관하며, 요청을 받으면 지체 없이 파기합니다. 신고 기록은 처리가 끝난 뒤 1년 안에 파기합니다. 기록 카드 이미지는 올린 뒤 7일이 지나면 자동으로 삭제되며, 그 뒤 공유 링크에는 게임 대표 그림이 대신 보입니다.</p>
 <ul>
 <li>설정 → 온라인 랭킹 → [내 기록 지우기]: 서버에 올린 기록과 아이디를 삭제하고 로그아웃합니다.</li>
 <li>설정 → 온라인 랭킹 → [로그아웃]: 기기에 저장된 식별값·아이디·보내지 못한 기록을 기기에서 지웁니다. 서버에 올린 기록까지 지우려면 [내 기록 지우기]를 이용해 주세요.</li>
@@ -57,11 +62,18 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <ul>
 <li>수탁 업체: Supabase, Inc.(데이터베이스와 서버 기능 제공)</li>
 <li>이전되는 국가와 장소: 일본 도쿄(Amazon Web Services 데이터센터)</li>
-<li>이전되는 항목: 2번의 수집 항목</li>
-<li>이전 시기와 방법: 온라인 랭킹을 이용할 때마다 암호화된 통신(HTTPS)으로 전송</li>
+<li>이전되는 항목: 2번의 수집 항목(기록 카드 이미지 포함)</li>
+<li>이전 시기와 방법: 온라인 랭킹을 이용하거나 [기록 공유]를 누를 때마다 암호화된 통신(HTTPS)으로 전송</li>
 <li>보유 기간: 5번과 같음</li>
 </ul>
-<p>국외 이전을 원하지 않으시면 온라인 랭킹에 회원가입하지 않거나, 이미 올린 기록을 지우시면 됩니다. 이 경우에도 게임의 나머지 기능은 모두 이용할 수 있습니다.</p>
+<p>기록 공유 링크의 페이지는 다음 업체가 제공합니다. 이 업체는 링크를 연 사람의 접속 정보(IP 주소, 브라우저 정보)를 링크 페이지를 보여 주는 데 필요한 동안만 처리하며, 개발사는 이 정보를 따로 저장하지 않습니다.</p>
+<ul>
+<li>수탁 업체: Cloudflare, Inc.(공유 링크 페이지 제공)</li>
+<li>이전되는 국가와 장소: 링크를 연 사람과 가까운 Cloudflare 데이터센터(한국을 포함한 세계 여러 나라)</li>
+<li>처리되는 항목: 링크를 연 사람의 접속 정보</li>
+<li>처리 시기와 방법: 공유 링크를 열 때마다 암호화된 통신(HTTPS)으로 처리</li>
+</ul>
+<p>국외 이전을 원하지 않으시면 온라인 랭킹에 회원가입하지 않거나, 이미 올린 기록을 지우시고, [기록 공유]를 누르지 않으시면 됩니다. 이 경우에도 게임의 나머지 기능은 모두 이용할 수 있습니다.</p>
 <h2>8. 광고(행태정보의 수집·이용·제공 및 거부)</h2>
 <p>게임에는 구글의 광고 서비스인 애드몹(Google AdMob)의 광고가 들어 있습니다. 전면 광고는 한 판이 끝나 화면이 넘어갈 때만(여러 판에 한 번) 표시되며, 전투나 레벨업 중에는 나오지 않습니다. 보상형 광고(결과 화면의 엽전 두 배, 천운관의 오늘의 선물)는 이용자가 버튼을 직접 눌렀을 때만 나옵니다. 광고를 보여 주기 위해 게임에 포함된 구글 모바일 광고 SDK가 다음 정보를 자동으로 수집해 구글에 보냅니다. 개발사는 이 정보를 직접 받거나 보관하지 않습니다.</p>
 <ul>
@@ -104,6 +116,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <p>시행일: 2026년 9월 15일</p>
 <p>개정일: 2026년 9월 16일 (순위표 아이디 신고 기능 추가에 따라 수집 항목·이용 목적·보유 기간에 신고 기록을 반영)</p>
 <p>개정일: 2026년 9월 22일 (구글 애드몹 광고 도입에 따라 광고 조항을 행태정보 안내로 바꾸고 기본 원칙·제3자 제공·자동 수집 장치 조항에 반영)</p>
+<p>개정일: 2026년 9월 23일 (기록 공유 기능 추가에 따라 기록 카드 이미지의 수집·이용·공개·7일 보관과 Cloudflare 처리 위탁을 반영)</p>
 </section>
 <hr>
 <section id="en" lang="en">
@@ -111,7 +124,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <p class="sub">Nomad Journey · BLACK THREAD</p>
 <p>Nomad Journey (노마드저니, brand: BLACK THREAD; &quot;we&quot;) handles personal information of players of the game &quot;Dead Dynasty&quot; (&quot;the Game&quot;) in accordance with applicable laws, including the Personal Information Protection Act of the Republic of Korea.</p>
 <h2>1. Basic principle</h2>
-<p>Your game progress and settings are stored only on your device and are never sent to our server. If you do not sign up or log in to the online leaderboard, we collect no personal information at all. However, the ad feature in the Game (Google AdMob) automatically collects the information in Section 8 and sends it to Google in order to show ads.</p>
+<p>Your game progress and settings are stored only on your device and are never sent to our server. If you do not sign up or log in to the online leaderboard, we collect no personal information at all. However, the ad feature in the Game (Google AdMob) automatically collects the information in Section 8 and sends it to Google in order to show ads. Also, only when you tap [Share record] on the result screen, we upload the record card image described in Section 2.</p>
 <h2>2. Information we collect</h2>
 <p>Only when you use the online leaderboard, we collect:</p>
 <ul>
@@ -122,7 +135,11 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>Country: estimated from connection information</li>
 <li>Report records: if you report another player&#x27;s ID on the leaderboard, the reporting device identifier, the reported ID, the leaderboard difficulty and the time of the report</li>
 </ul>
-<p>Your IP address is not stored in our database. It is used briefly in server memory to block rapid repeated login or erase attempts, and may remain temporarily in our hosting provider&#x27;s operational logs.</p>
+<p>Only when you tap [Share record] on the result screen (whether or not you use the online leaderboard), we upload:</p>
+<ul>
+<li>A record card image: one picture showing the run result (clear/fallen), score and rank, survival time, kills and level reached. It contains nothing that identifies you, such as your ID or device identifier.</li>
+</ul>
+<p>Your IP address is not stored in our database. It is used briefly in server memory to block rapid repeated login, erase or share attempts, and may remain temporarily in our hosting provider&#x27;s operational logs.</p>
 <h2>3. Purposes</h2>
 <ul>
 <li>Providing the online leaderboard (ranking and display)</li>
@@ -130,11 +147,12 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>Letting you recover your records on a new device with your ID and password</li>
 <li>Blocking abusive repeated attempts</li>
 <li>Receiving and handling reports of inappropriate IDs (reviewed by us, then hidden from the leaderboard)</li>
+<li>Providing the preview image for record share links (so the record card appears when the link is sent in apps such as KakaoTalk)</li>
 </ul>
 <h2>4. Information shown to other players</h2>
-<p>On the leaderboard, other players can see your ID, score, clear bonus, survival time, kills, whether you cleared, country and total clears. Your device identifier and password, and who reported what, are never shown.</p>
+<p>On the leaderboard, other players can see your ID, score, clear bonus, survival time, kills, whether you cleared, country and total clears. Your device identifier and password, and who reported what, are never shown. A record card image uploaded through [Share record] can be viewed by anyone who has the share link. The link address is an unguessable random value, so people without the link cannot find it.</p>
 <h2>5. Retention and deletion</h2>
-<p>We keep this information until you erase your records or ask us to delete it, and delete it without delay on request. Report records are deleted within one year after they are handled.</p>
+<p>We keep this information until you erase your records or ask us to delete it, and delete it without delay on request. Report records are deleted within one year after they are handled. Record card images are deleted automatically 7 days after upload; after that, the share link shows the game&#x27;s standard banner instead.</p>
 <ul>
 <li>Settings → Online leaderboard → [Erase my records]: deletes your uploaded records and ID from the server and logs you out.</li>
 <li>Settings → Online leaderboard → [Log out]: removes the identifier, ID and unsent records from your device. To delete what is already on the server, use [Erase my records].</li>
@@ -146,11 +164,18 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <ul>
 <li>Provider: Supabase, Inc. (database and server functions)</li>
 <li>Location: Tokyo, Japan (Amazon Web Services data center)</li>
-<li>Information transferred: the items in section 2</li>
-<li>When and how: each time you use the online leaderboard, over encrypted connections (HTTPS)</li>
+<li>Information transferred: the items in section 2 (including record card images)</li>
+<li>When and how: each time you use the online leaderboard or tap [Share record], over encrypted connections (HTTPS)</li>
 <li>Retention: as in section 5</li>
 </ul>
-<p>If you do not want this transfer, simply do not sign up for the online leaderboard, or erase your records. All other features of the Game remain available.</p>
+<p>The pages behind record share links are served by the following provider. It processes the connection information (IP address, browser information) of people who open a link only as long as needed to show the page; we do not store this information.</p>
+<ul>
+<li>Provider: Cloudflare, Inc. (share link pages)</li>
+<li>Location: the Cloudflare data center nearest to the person opening the link (in many countries, including Korea)</li>
+<li>Information processed: connection information of the person opening the link</li>
+<li>When and how: each time a share link is opened, over encrypted connections (HTTPS)</li>
+</ul>
+<p>If you do not want this transfer, simply do not sign up for the online leaderboard, erase your records, and do not tap [Share record]. All other features of the Game remain available.</p>
 <h2>8. Advertising (collection, use and sharing of behavioral information, and how to opt out)</h2>
 <p>The Game shows ads from Google AdMob, Google&#x27;s advertising service. Full-screen ads appear only when a run ends and the screen changes (once every few runs), never during combat or level-ups. Rewarded ads (doubling coins on the result screen and the daily gift in Cheonun Hall) play only when you tap their button yourself. To show ads, the Google Mobile Ads SDK included in the Game automatically collects the following information and sends it to Google. We do not receive or store this information ourselves.</p>
 <ul>
@@ -193,6 +218,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <p>Effective date: September 15, 2026</p>
 <p>Revised: September 16, 2026 (added leaderboard ID reports to the information collected, purposes and retention)</p>
 <p>Revised: September 22, 2026 (added Google AdMob ads: rewrote the advertising section and updated the basic principle, third-party sharing and automatic collection sections)</p>
+<p>Revised: September 23, 2026 (added record sharing: record card image collection, use, visibility, 7-day retention and Cloudflare as a processor)</p>
 </section>
 </main>
 </body>
