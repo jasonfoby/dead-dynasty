@@ -29,7 +29,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>아이디(이용자가 정한 별명)</li>
 <li>비밀번호: 원문은 저장하지 않으며, 되돌릴 수 없는 방식(bcrypt)으로 변환한 값만 보관합니다.</li>
 <li>기기를 구분하는 값: 게임이 기기에서 무작위로 만든 값이며, 전화번호·기기 고유번호·광고 식별자가 아닙니다.</li>
-<li>플레이 기록: 점수, 클리어 보너스, 버틴 시간, 처치 수(적 종류별 내역 포함), 도달 레벨, 클리어 여부, 난이도·스테이지·밤낮, 직업과 자세, 모은 엽전·마제은, 누적 클리어 수</li>
+<li>플레이 기록: 점수, 클리어 보너스, 버틴 시간, 처치 수(적 종류별 내역 포함), 도달 레벨, 클리어 여부, 난이도·스테이지·밤낮, 직업과 자세, 모은 엽전·마제은, 누적 클리어 수, 조작 장치 종류(폰 화면 조작·게임패드·키보드와 마우스)와 자동 조준·자동 공격 사용 여부</li>
 <li>접속 국가: 접속 정보로 추정한 국가</li>
 <li>신고 기록: 순위표에서 다른 이용자의 아이디를 신고한 경우, 신고한 사람의 기기를 구분하는 값, 신고된 아이디, 신고한 순위표의 난이도, 신고 시각</li>
 </ul>
@@ -48,7 +48,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>기록 공유 링크의 미리보기 이미지 제공(카카오톡 등에서 링크를 보낼 때 기록 카드가 보이도록)</li>
 </ul>
 <h2>4. 다른 이용자에게 공개되는 항목</h2>
-<p>순위표에서 다른 이용자에게 보이는 항목은 아이디, 점수, 클리어 보너스, 버틴 시간, 처치 수, 클리어 여부, 국가, 누적 클리어 수입니다. 기기를 구분하는 값과 비밀번호, 신고한 사람과 신고 내용은 공개되지 않습니다. 기록 공유로 올린 기록 카드 이미지는 공유 링크를 받은 사람이면 누구나 볼 수 있습니다. 링크 주소는 추측할 수 없는 무작위 값이라, 링크를 모르는 사람은 찾아볼 수 없습니다.</p>
+<p>순위표에서 다른 이용자에게 보이는 항목은 아이디, 점수, 클리어 보너스, 버틴 시간, 처치 수, 클리어 여부, 국가, 누적 클리어 수, 조작 장치 종류와 자동 조준·자동 공격 사용 여부입니다. 기기를 구분하는 값과 비밀번호, 신고한 사람과 신고 내용은 공개되지 않습니다. 기록 공유로 올린 기록 카드 이미지는 공유 링크를 받은 사람이면 누구나 볼 수 있습니다. 링크 주소는 추측할 수 없는 무작위 값이라, 링크를 모르는 사람은 찾아볼 수 없습니다.</p>
 <h2>5. 보유 기간과 파기</h2>
 <p>수집한 정보는 이용자가 기록을 지우거나 삭제를 요청할 때까지 보관하며, 요청을 받으면 지체 없이 파기합니다. 신고 기록은 처리가 끝난 뒤 1년 안에 파기합니다. 기록 카드 이미지는 올린 뒤 7일이 지나면 자동으로 삭제되며, 그 뒤 공유 링크에는 게임 대표 그림이 대신 보입니다.</p>
 <ul>
@@ -75,7 +75,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 </ul>
 <p>국외 이전을 원하지 않으시면 온라인 랭킹에 회원가입하지 않거나, 이미 올린 기록을 지우시고, [기록 공유]를 누르지 않으시면 됩니다. 이 경우에도 게임의 나머지 기능은 모두 이용할 수 있습니다.</p>
 <h2>8. 광고(행태정보의 수집·이용·제공 및 거부)</h2>
-<p>게임에는 구글의 광고 서비스인 애드몹(Google AdMob)의 광고가 들어 있습니다. 전면 광고는 한 판이 끝나 화면이 넘어갈 때만(여러 판에 한 번) 표시되며, 전투나 레벨업 중에는 나오지 않습니다. 보상형 광고(결과 화면의 엽전 두 배, 천운관의 오늘의 선물)는 이용자가 버튼을 직접 눌렀을 때만 나옵니다. 광고를 보여 주기 위해 게임에 포함된 구글 모바일 광고 SDK가 다음 정보를 자동으로 수집해 구글에 보냅니다. 개발사는 이 정보를 직접 받거나 보관하지 않습니다.</p>
+<p>게임에는 구글의 광고 서비스인 애드몹(Google AdMob)의 광고가 들어 있습니다. 전면 광고는 한 판이 끝나 화면이 넘어갈 때만(여러 판에 한 번) 표시되며, 전투나 레벨업 중에는 나오지 않습니다. 보상형 광고(결과 화면의 엽전 두 배, 천운관의 엽전 받기[옛 이름: 오늘의 선물])는 이용자가 버튼을 직접 눌렀을 때만 나옵니다. 광고를 보여 주기 위해 게임에 포함된 구글 모바일 광고 SDK가 다음 정보를 자동으로 수집해 구글에 보냅니다. 개발사는 이 정보를 직접 받거나 보관하지 않습니다.</p>
 <ul>
 <li>수집하는 행태정보 등: 광고 ID(기기의 광고 식별자), 앱 세트 ID, IP 주소(대략적인 위치 추정에 사용), 광고 조회·클릭과 앱 실행 등 앱 이용 기록, 앱 성능·오류 등 진단 정보</li>
 <li>수집 방법: 게임이 광고를 요청하고 표시할 때 광고 SDK가 자동으로 수집</li>
@@ -117,6 +117,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <p>개정일: 2026년 9월 16일 (순위표 아이디 신고 기능 추가에 따라 수집 항목·이용 목적·보유 기간에 신고 기록을 반영)</p>
 <p>개정일: 2026년 9월 22일 (구글 애드몹 광고 도입에 따라 광고 조항을 행태정보 안내로 바꾸고 기본 원칙·제3자 제공·자동 수집 장치 조항에 반영)</p>
 <p>개정일: 2026년 9월 23일 (기록 공유 기능 추가에 따라 기록 카드 이미지의 수집·이용·공개·7일 보관과 Cloudflare 처리 위탁을 반영)</p>
+<p>개정일: 2026년 10월 2일 (순위표에 조작 장치 표시 기능 추가에 따라 수집·공개 항목에 조작 장치 종류와 자동 조준·자동 공격 사용 여부를 반영)</p>
 </section>
 <hr>
 <section id="en" lang="en">
@@ -131,7 +132,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>ID (a nickname you choose)</li>
 <li>Password: never stored in readable form; we keep only an irreversible bcrypt hash.</li>
 <li>Device identifier: a random value the Game creates on your device. It is not your phone number, hardware serial or advertising ID.</li>
-<li>Run records: score, clear bonus, survival time, kills (with a per-enemy breakdown), level reached, whether you cleared, difficulty, stage, time of day, class and stance, coins and silver earned, total clears</li>
+<li>Run records: score, clear bonus, survival time, kills (with a per-enemy breakdown), level reached, whether you cleared, difficulty, stage, time of day, class and stance, coins and silver earned, total clears, input device type (phone touch controls, gamepad or keyboard and mouse) and whether auto-aim or auto-attack was used</li>
 <li>Country: estimated from connection information</li>
 <li>Report records: if you report another player&#x27;s ID on the leaderboard, the reporting device identifier, the reported ID, the leaderboard difficulty and the time of the report</li>
 </ul>
@@ -150,7 +151,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <li>Providing the preview image for record share links (so the record card appears when the link is sent in apps such as KakaoTalk)</li>
 </ul>
 <h2>4. Information shown to other players</h2>
-<p>On the leaderboard, other players can see your ID, score, clear bonus, survival time, kills, whether you cleared, country and total clears. Your device identifier and password, and who reported what, are never shown. A record card image uploaded through [Share record] can be viewed by anyone who has the share link. The link address is an unguessable random value, so people without the link cannot find it.</p>
+<p>On the leaderboard, other players can see your ID, score, clear bonus, survival time, kills, whether you cleared, country, total clears, and the input device type and whether auto-aim or auto-attack was used. Your device identifier and password, and who reported what, are never shown. A record card image uploaded through [Share record] can be viewed by anyone who has the share link. The link address is an unguessable random value, so people without the link cannot find it.</p>
 <h2>5. Retention and deletion</h2>
 <p>We keep this information until you erase your records or ask us to delete it, and delete it without delay on request. Report records are deleted within one year after they are handled. Record card images are deleted automatically 7 days after upload; after that, the share link shows the game&#x27;s standard banner instead.</p>
 <ul>
@@ -177,7 +178,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 </ul>
 <p>If you do not want this transfer, simply do not sign up for the online leaderboard, erase your records, and do not tap [Share record]. All other features of the Game remain available.</p>
 <h2>8. Advertising (collection, use and sharing of behavioral information, and how to opt out)</h2>
-<p>The Game shows ads from Google AdMob, Google&#x27;s advertising service. Full-screen ads appear only when a run ends and the screen changes (once every few runs), never during combat or level-ups. Rewarded ads (doubling coins on the result screen and the daily gift in Cheonun Hall) play only when you tap their button yourself. To show ads, the Google Mobile Ads SDK included in the Game automatically collects the following information and sends it to Google. We do not receive or store this information ourselves.</p>
+<p>The Game shows ads from Google AdMob, Google&#x27;s advertising service. Full-screen ads appear only when a run ends and the screen changes (once every few runs), never during combat or level-ups. Rewarded ads (doubling coins on the result screen and the &quot;Get coins&quot; button in Cheonun Hall, formerly the daily gift) play only when you tap their button yourself. To show ads, the Google Mobile Ads SDK included in the Game automatically collects the following information and sends it to Google. We do not receive or store this information ourselves.</p>
 <ul>
 <li>Information collected: advertising ID (your device&#x27;s ad identifier), app set ID, IP address (used to estimate approximate location), app usage such as ad views, clicks and app launches, and diagnostic data such as app performance and errors</li>
 <li>How it is collected: automatically by the ad SDK when the Game requests and shows an ad</li>
@@ -219,6 +220,7 @@ hr{border:0;border-top:1px solid #4a3a28;margin:48px 0}
 <p>Revised: September 16, 2026 (added leaderboard ID reports to the information collected, purposes and retention)</p>
 <p>Revised: September 22, 2026 (added Google AdMob ads: rewrote the advertising section and updated the basic principle, third-party sharing and automatic collection sections)</p>
 <p>Revised: September 23, 2026 (added record sharing: record card image collection, use, visibility, 7-day retention and Cloudflare as a processor)</p>
+<p>Revised: October 2, 2026 (added input device indicators on the leaderboard: the input device type and auto-aim/auto-attack use are now collected and shown)</p>
 </section>
 </main>
 </body>
